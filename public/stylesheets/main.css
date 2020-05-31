@@ -9,3 +9,16 @@
 .delete-form {
     display: inline;
 }
+
+.form-goback-btn {
+    font-weight: 400;
+}
+
+.form-header {
+    font-weight: bold;
+}
+
+.form-filling {
+    width: 20%; 
+    margin: 25px auto;
+}
