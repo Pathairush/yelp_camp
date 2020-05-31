@@ -66,6 +66,6 @@ app.use("/campgrounds/:id/comments", commentRoutes);
 // id won't be send to the route. you need to use the mergeParams option in that specifice route file
 app.use("/campgrounds", campgroundRoutes);
 
-app.listen(process.env.PORT || 3000, function () {
+app.listen(process.env.PORT || 3000, process.env.IP, function () {
     console.log("yelpcamp has started.");
 });
