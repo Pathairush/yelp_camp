@@ -12,6 +12,7 @@ router.get("/", function (req, res) {
             res.render("campgrounds/index", {
                 campgrounds: allCampgrounds,
                 currentUser: req.user,
+                page: "campgrounds"
             });
         }
     });
