@@ -18,9 +18,10 @@ var commentRoutes = require("./routes/comments"),
     indexRoutes = require("./routes/index");
 
 // this will be the mongo atlas on the cloud
+let db_uri = process.env.DB_CLOUD || process.env.DB_LOCAL
 mongoose
     .connect(
-        process.env.DB_URI,
+        db_uri,
         {
             useNewUrlParser: true,
             useUnifiedTopology: true
