@@ -12,6 +12,9 @@ var express = require("express"),
     User = require("./models/user"),
     seedDB = require("./seeds");
 
+// require moment JS
+app.locals.moment = require("moment");
+
 // requring route
 var commentRoutes = require("./routes/comments"),
     campgroundRoutes = require("./routes/campgrounds"),
